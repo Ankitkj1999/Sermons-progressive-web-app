@@ -1,0 +1,22 @@
+textarea{
+    resize: none;
+}
+
+.page-header {text-align: center}
+
+.row {text-align: center}
+
+body {
+    font-size: 16px;
+    padding-top: 10px;
+    background-color: #FFF8DC !important;
+;
+}
+
+.share-buttons{
+    list-style: none;
+}
+
+.share-buttons li{
+    display: inline;
+}

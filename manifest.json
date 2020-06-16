@@ -1,0 +1,38 @@
+{
+	"name" : "Sermons",
+	"short_name" : "Sermon",
+	"description" : "Sermon PWA",
+	"lang" : "en-US",
+	"background_color" : "#ffffff",
+	"theme_color" : "#ffffff",
+	"categories" : "game,fun,entertainment",
+	"start_url": "/",
+	
+	"display" : "standalone",
+	"scope" : "/",
+	"icons" : [
+		{
+			"src": "images/icon-74.png",
+			"sizes": "74x74"
+		},
+		{
+			"src": "images/icon-96.png",
+			"sizes": "96x96"
+		},
+		{
+			"src": "images/icon-144.png",
+			"sizes": "144x144"
+		},
+
+		
+		{
+			"src": "images/icon-384.png",
+			"sizes": "384x384"
+		},
+		{
+			"src": "images/icon-512.png",
+			"sizes": "512x512"
+		}
+	]
+	
+}

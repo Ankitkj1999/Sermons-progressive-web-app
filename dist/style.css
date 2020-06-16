@@ -1,0 +1,42 @@
+body {
+  background: transparent;
+}
+.ui.header {
+  color: #fff;
+  margin-bottom: 0;
+}
+.desc {
+  color: #ddd;
+  margin-bottom: 2em;
+}
+.container {
+  padding: 2em ;
+}
+.ui.card {
+  width: 100%;
+}
+.content-result {
+  min-height: 330px;
+}
+.result .placeholder {
+  padding-top: 100px;
+  font-size: 30px;
+  line-height: 1;
+  color: gray;
+  text-align: center;
+}
+.result .placeholder span {
+  font-size: 15px;
+}
+.result .status {
+  margin-top: 5px;
+}
+.result progress {
+  width: 100%;
+}
+.result .ui.message {
+  margin-top: 2rem;
+}
+.result .ui.message pre {
+  white-space: pre-wrap;
+}

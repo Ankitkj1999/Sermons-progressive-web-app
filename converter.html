@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sermon</title>
+    <meta charset="utf-8">
+    <link rel='manifest' href='/manifest.json'>
+    <link rel="stylesheet" src="style.css">
+    <link rel="icon" type="image/png" href="icon1.png" />
+    <link rel='manifest' href='/manifest.json'>
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-status-bar" content="#ffffff" >
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--mobile icons-->
+<link rel='shortcut icon' type='image/x-icon' href="images/icon.png" />
+<link rel="apple-touch-icon" sizes="74x74" href="images/icon-74.png" />
+<link rel="apple-touch-icon" sizes="96x96" href="images/icon-96.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="images/icon-144.png" />
+<link rel="apple-touch-icon" sizes="384x384" href="images/icon-384.png" />
+<link rel="apple-touch-icon" sizes="512x512" href="images/icon-512.png" />
+ <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oxygen:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Theme Style -->
+    <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+  <script src="http://vjs.zencdn.net/4.12/video.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      /*Counter*/
+      body{
+        counter-reset: section;
+      }
+      
+      h5::before {
+        counter-increment: section;
+        content: "" counter(section) " ";
+      }
+
+/*converter*/
+
+  </style>
+    <!-- Latest compiled and minified CSS -->
+
+    <!-- Optional theme -->
+
+
+    <script language=JavaScript src="media/conv/scripts/jquery-2.1.1.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="media/conv/js/bootstrap.min.js"></script>
+
+    <script language=JavaScript src="media/conv/scripts/common.js"></script>
+    <script language=JavaScript src="media/conv/scripts/tamil.js"></script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "ur-a54d2d3c-f5d2-b68e-19b9-4100a82bfeca", doNotHash: false, doNotCopy: false, hashAddressBar: true});</script>
+    <script>
+        $( document ).ready(function() {
+            //$("textarea").focus();
+            //var e = $.Event('keypress');
+            //e.which = 68; // Character 'A'
+            //$('textarea').trigger(e);
+            $("textarea").on("keypress", function(e) {
+                toggleKBMode(e);
+                convertThis(e);
+                //onKeyDown="toggleKBMode(event)" onKeyPress="javascript:convertThis(event)"
+            });
+        });
+    </script>
+  </head>
+  <body >
+    
+    <header role="banner">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand " href="index.html">Sermons</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExample05">
+            <ul class="navbar-nav pl-md-5 ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Books</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Languages</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="bookTabel.html">English</a>
+                  <a class="dropdown-item" href="bookTabel.html">Hindi</a>
+                  <a class="dropdown-item" href="bookTabel.html">Tamil</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tracts</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Languages</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="tractTabel.html">English</a>
+                  <a class="dropdown-item" href="tractTabel.html">Hindi</a>
+                  <a class="dropdown-item" href="tractTabel.html">Tamil</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Message</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Languages</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="message.html">English</a>
+                  <a class="dropdown-item" href="message.html">Hindi</a>
+                  <a class="dropdown-item" href="message.html">Tamil</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galary</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Languages</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="galary.html">English</a>
+                  <a class="dropdown-item" href="galary.html">Hindi</a>
+                  <a class="dropdown-item" href="galary.html">Tamil</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Video</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Languages</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="video.html">English</a>
+                  <a class="dropdown-item" href="video.html">Hindi</a>
+                  <a class="dropdown-item" href="video.html">Tamil</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Music</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Languages</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="music.html">English</a>
+                  <a class="dropdown-item" href="music.html">Hindi</a>
+                  <a class="dropdown-item" href="music.html">Tamil</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Converter</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Languages</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="converter.html">English to Tamil</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Help</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                 <a class="dropdown-item" href="bookOrder.html">Booklet Printing</a>
+                 <a class="dropdown-item" href="tts.html">Text To Speech</a>
+                 <a class="dropdown-item" href="type.html">Type Writer</a>
+                 <a class="dropdown-item" href="imgTxt.html">Image To Text</a>
+
+                </div>
+              </li>
+               
+              <li class="nav-item">
+                <a class="nav-link" href="downloadList.html">Download </a>
+              </li><li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- END header -->
+
+    <div class="top-shadow"></div>
+    
+    <div class="inner-page">
+    <div class="slider-item" style="background-image: url('images/sermon2.jpg'); ">
+        
+        <div class="container">
+          <div class="row slider-text align-items-center justify-content-center">
+            <div class="col-md-8 text-center col-sm-12 element-animate pt-5">
+              <h1 class="pt-5"><span>English To Tamil</span></h1>
+              <p class="mb-5 w-75">Converter</p>
+            </div>
+          </div>
+        </div>
+     
+      </div>
+    </div>
+    
+
+    <section>
+   
+
+      </div>
+      <div class="sticky-top" style="padding:10px">
+        <a data-toggle="tooltip" data-placement="top" title="English to Tamil Key Map">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalImg">
+            English to Tamil <br>Key Map
+          </button>
+        </a>
+        </div>
+  
+  
+<div class="container" style="color: black;">
+    <div >
+      <br>
+        <h4 style="text-align: center;">Please type in the text area below to convert to tamil letters</h4>
+        
+        <div class=".col-md-6 .col-md-offset-3" >
+            <form name="post" method="post" role="form">
+                <textarea name="comment" charset="utf-8" class="form-control" id="textarea" cols="10" rows="15"></textarea>
+            </form>
+         
+        </div>
+        <br><br>
+  
+    </div>
+</div>
+
+
+    </section>
+
+    <section>
+      <div class="section bg-primary">
+        <div class="container">
+        <h4 style="text-align: center;">Tamil - English letter map used in conversion</h4>
+        <hr>
+        <div class="col-xs-6 col-lg-offset-3 " style="color: black;">
+            <a href="#" class="thumbnail"  style="color: black;">
+                <img src="media/conv/images/tamil.jpg" alt="125x125">
+            </a>
+        </div>
+      </div>
+    </div>
+    </section>
+
+  </section>
+<!-- Img Modal -->
+<div class="modal fade" id="exampleModalImg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="background-color: transparent;">
+  <div class="modal-dialog  modal-lg " style="background-color: transparent;">
+    <div class="modal-content" style="background-color: transparent;">
+      <div class="modal-header" style="background-color: transparent;">
+        <h4 class="modal-title" id="exampleModalLabel" style="color: white;text-align:center">Tamil - English letter map used in conversion</h4>
+        <button type="button" class="close" style="color: white;text-align:center" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="background-color: transparent;">
+        <section>
+            <div class="container" >
+            <div class="col-xs-6 col-lg-offset-3 " style="color: black;">
+                <a href="#" class="thumbnail"  style="color: black;">
+                    <img src="media/conv/images/tamil.jpg" width="730px" alt="tamil">
+                </a>
+            </div>
+          </div>
+        </section>      </div>
+      
+    </div>
+  </div>
+</div>
+   <!--footer-->
+   <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-4 mb-5">
+          <h3>About The Sermon</h3>
+          <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. .</p>
+          <ul class="list-unstyled footer-link d-flex footer-social">
+            <li><a href="#" class="p-2"><span class="fa fa-twitter"></span></a></li>
+            <li><a href="#" class="p-2"><span class="fa fa-facebook"></span></a></li>
+            <li><a href="#" class="p-2"><span class="fa fa-linkedin"></span></a></li>
+            <li><a href="#" class="p-2"><span class="fa fa-instagram"></span></a></li>
+          </ul>
+
+        </div>
+        <div class="col-md-5 mb-5 pl-md-5">
+          <h3>Contact Info</h3>
+          <ul class="list-unstyled footer-link">
+            <li class="d-block">
+              <span class="d-block">Address:</span>
+              <span >34 Street Name, City Name Here, India</span></li>
+            <li class="d-block"><span class="d-block">Telephone:</span><span >+1 242 4942 290</span></li>
+            <li class="d-block"><span class="d-block">Email:</span><span >info@yourdomain.com</span></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-5">
+          <h3>Quick Links</h3>
+          <ul class="list-unstyled footer-link">
+            <li><a href="bookTabel.html">BOOKS</a></li>
+            <li><a href="tractTabel.html">TRACTS</a></li>
+            <li><a href="message.html">MESSAGE</a></li>
+            <li><a href="galary.html">GALLARY</a></li>
+            <li><a href="video.html">VIDEO</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-md-center text-left">
+           <p class="copyright">
+       
+          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </a>
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END footer -->
+
+  <!-- loader -->
+  <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <script src="js/main.js"></script>
+  <script>
+    $(document).ready(function() {
+      /* Apply fancybox to multiple items */
+      
+      $("a.iframe").fancybox({
+      'width': 1440, // or whatever you want
+      'height': 880, // or whatever you want
+      'type': 'iframe'
+      });
+      
+      });
+   </script>
+   <script>
+    $(document).ready(function() {
+      /* Apply fancybox to multiple items */
+      
+      $("a.ifram").fancybox({
+        'width': 880, // or whatever you want
+        'height': 110, // or whatever you want
+        'padding' : 25,
+        'type': 'iframe'
+      });
+      
+      });
+   </script>
+
+
+   <script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>

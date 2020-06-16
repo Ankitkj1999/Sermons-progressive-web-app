@@ -1,0 +1,46 @@
+<div class="ui container">  
+  <h1 class="ui header">Image to Text</h1>
+  <div class="desc">Extract all the text from a selected image using tesseract OCR engine.</div>
+  
+  <div class="ui grid stackable">
+    <div class="row">
+      
+      <div class="eight wide column">
+        <div class="ui card">
+          <div class="content">
+            <h2 class="header">Input</h2>
+          </div>
+          <div class="content">
+            <img id="image" class="ui centered medium image" src="http://www.brainstormerbingo.com/Images/upload-empty.png"/>
+          </div>
+          <div class="content extra">
+            <input id="file" type="file" onchange="proccess(window.lastFile=this.files[0])">  
+          </div>
+        </div>
+      </div>
+        
+      <div class="eight wide column">
+        <div class="ui card">
+          <div class="content">
+            <h2 class="header">Output</h2>
+          </div>
+          <div class="content content-result">
+            <div class='ui grid'>
+              <div class='row result'>
+                <div class="column placeholder">
+                  No Output <br/>
+                  <span>Choose a file to start</span>    
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div class="content extra">
+            <small>Powered by <a href="https://github.com/naptha/tesseract.js#tesseractjs">Tesseract JS</a></small>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+ 
+</div>

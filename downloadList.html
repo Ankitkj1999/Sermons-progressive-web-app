@@ -1,0 +1,603 @@
+<!DOC  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sermon</title>
+    <meta charset="utf-8">
+    <link rel='manifest' href='/manifest.json'>
+    <link rel="stylesheet" src="style.css">
+    <link rel="icon" type="image/png" href="icon1.png" />
+    <link rel='manifest' href='/manifest.json'>
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-status-bar" content="#ffffff" >
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--mobile icons-->
+<link rel='shortcut icon' type='image/x-icon' href="images/icon.png" />
+<link rel="apple-touch-icon" sizes="74x74" href="images/icon-74.png" />
+<link rel="apple-touch-icon" sizes="96x96" href="images/icon-96.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="images/icon-144.png" />
+<link rel="apple-touch-icon" sizes="384x384" href="images/icon-384.png" />
+<link rel="apple-touch-icon" sizes="512x512" href="images/icon-512.png" />
+ <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oxygen:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Theme Style -->
+    <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+  <script src="http://vjs.zencdn.net/4.12/video.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="../../extensions/Editor/css/editor.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/select/1.3.1/css/select.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/colreorder/1.5.2/css/colReorder.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
+ 
+    <script type="text/javascript" src="DataTables/datatables.min.js"></script>
+    <style>
+      a.buttons-collection {
+        margin-left: 1em;
+    }
+
+
+      /*Counter*/
+      body{
+        counter-reset: section;
+      }
+      
+      h5::before {
+        counter-increment: section;
+        content: "" counter(section) " ";
+      }
+
+  </style>
+
+ 
+  </head>
+  <body>
+    
+    <header role="banner">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand " href="index.html">Sermons</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExample05">
+            <ul class="navbar-nav pl-md-5 ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Books</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Languages</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="bookTabel.html">English</a>
+                  <a class="dropdown-item" href="bookTabel.html">Hindi</a>
+                  <a class="dropdown-item" href="bookTabel.html">Tamil</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tracts</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Languages</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="tractTabel.html">English</a>
+                  <a class="dropdown-item" href="tractTabel.html">Hindi</a>
+                  <a class="dropdown-item" href="tractTabel.html">Tamil</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Message</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Languages</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="message.html">English</a>
+                  <a class="dropdown-item" href="message.html">Hindi</a>
+                  <a class="dropdown-item" href="message.html">Tamil</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galary</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Languages</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="galary.html">English</a>
+                  <a class="dropdown-item" href="galary.html">Hindi</a>
+                  <a class="dropdown-item" href="galary.html">Tamil</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Video</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Languages</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="video.html">English</a>
+                  <a class="dropdown-item" href="video.html">Hindi</a>
+                  <a class="dropdown-item" href="video.html">Tamil</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Music</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Languages</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="music.html">English</a>
+                  <a class="dropdown-item" href="music.html">Hindi</a>
+                  <a class="dropdown-item" href="music.html">Tamil</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Converter</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Languages</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="converter.html">English to Tamil</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Help</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                 <a class="dropdown-item" href="bookOrder.html">Booklet Printing</a>
+                 <a class="dropdown-item" href="tts.html">Text To Speech</a>
+                 <a class="dropdown-item" href="type.html">Type Writer</a>
+                 <a class="dropdown-item" href="imgTxt.html">Image To Text</a>
+
+                </div>
+              </li>
+               
+              <li class="nav-item">
+                <a class="nav-link" href="downloadList.html">Download </a>
+              </li><li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- END header -->
+
+    <div class="top-shadow"></div>
+    
+    <div class="inner-page">
+    <div class="slider-item" style="background-image: url('images/sermon2.jpg');">
+        
+        <div class="container">
+          <div class="row slider-text align-items-center justify-content-center">
+            <div class="col-md-8 text-center col-sm-12 element-animate pt-5">
+              <h1 class="pt-5"><span>Downloads</span></h1>
+              <p class="mb-5 w-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta provident, velit fugiat alias, perferendis temporibus.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+  <section>
+      <div style="margin: 20px;">
+        <table id="example" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>S No</th>
+                    <th>Discription</th>
+                    <th>OS</th>
+                    <th>Bit (32/64)</th>
+                    <th>Version</th>
+                    <th>Download</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>Tiger Nixon</td>
+                    <td>System Architect</td>
+                    <td>Edinburgh</td>
+                    <td>61</td>
+                    <td>$320,800</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Garrett Winters</td>
+                    <td>Accountant</td>
+                    <td>Tokyo</td>
+                    <td>63</td>
+                    <td>$170,750</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Ashton Cox</td>
+                    <td>Junior Technical Author</td>
+                    <td>San Francisco</td>
+                    <td>66</td>
+                    <td><a href="media/downloads/Software.zip"  download="doc"> <svg class="bi bi-arrow-down-square-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 5a.5.5 0 0 0-1 0v4.793L5.354 7.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 9.793V5z"/>
+                    </svg></a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Cedric Kelly</td>
+                    <td>Senior Javascript Developer</td>
+                    <td>Edinburgh</td>
+                    <td>22</td>
+                    <td>$433,060</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Airi Satou</td>
+                    <td>Accountant</td>
+                    <td>Tokyo</td>
+                    <td>33</td>
+                    <td> <a href="media/downloads/Software.zip"  download="doc"> <svg class="bi bi-arrow-down-square-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 5a.5.5 0 0 0-1 0v4.793L5.354 7.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 9.793V5z"/>
+                    </svg></a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Brielle Williamson</td>
+                    <td>Integration Specialist</td>
+                    <td>New York</td>
+                    <td>61</td>
+                    <td>$372,000</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Herrod Chandler</td>
+                    <td>Sales Assistant</td>
+                    <td>San Francisco</td>
+                    <td>59</td>
+                    <td>$137,500</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Rhona Davidson</td>
+                    <td>Integration Specialist</td>
+                    <td>Tokyo</td>
+                    <td>55</td>
+                    <td>$327,900</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Colleen Hurst</td>
+                    <td>Javascript Developer</td>
+                    <td>San Francisco</td>
+                    <td>39</td>
+                    <td>$205,500</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Sonya Frost</td>
+                    <td>Software Engineer</td>
+                    <td>Edinburgh</td>
+                    <td>23</td>
+                    <td>$103,600</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Jena Gaines</td>
+                    <td>Office Manager</td>
+                    <td>London</td>
+                    <td>30</td>
+                    <td>$90,560</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Quinn Flynn</td>
+                    <td>Support Lead</td>
+                    <td>Edinburgh</td>
+                    <td>22</td>
+                    <td>$342,000</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Charde Marshall</td>
+                    <td>Regional Director</td>
+                    <td>San Francisco</td>
+                    <td>36</td>
+                    <td>$470,600</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Haley Kennedy</td>
+                    <td>Senior Marketing Designer</td>
+                    <td>London</td>
+                    <td>43</td>
+                    <td>$313,500</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Tatyana Fitzpatrick</td>
+                    <td>Regional Director</td>
+                    <td>London</td>
+                    <td>19</td>
+                    <td>$385,750</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Michael Silva</td>
+                    <td>Marketing Designer</td>
+                    <td>London</td>
+                    <td>66</td>
+                    <td>$198,500</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Paul Byrd</td>
+                    <td>Chief Financial Officer (CFO)</td>
+                    <td>New York</td>
+                    <td>64</td>
+                    <td>$725,000</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Gloria Little</td>
+                    <td>Systems Administrator</td>
+                    <td>New York</td>
+                    <td>59</td>
+                    <td>$237,500</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Bradley Greer</td>
+                    <td>Software Engineer</td>
+                    <td>London</td>
+                    <td>41</td>
+                    <td>$132,000</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Dai Rios</td>
+                    <td>Personnel Lead</td>
+                    <td>Edinburgh</td>
+                    <td>35</td>
+                    <td>$217,500</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Jenette Caldwell</td>
+                    <td>Development Lead</td>
+                    <td>New York</td>
+                    <td>30</td>
+                    <td>$345,000</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Yuri Berry</td>
+                    <td>Chief Marketing Officer (CMO)</td>
+                    <td>New York</td>
+                    <td>40</td>
+                    <td>$675,000</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Caesar Vance</td>
+                    <td>Pre-Sales Support</td>
+                    <td>New York</td>
+                    <td>21</td>
+                    <td>$106,450</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Doris Wilder</td>
+                    <td>Sales Assistant</td>
+                    <td>Sydney</td>
+                    <td>23</td>
+                    <td>$85,600</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Angelica Ramos</td>
+                    <td>Chief Executive Officer (CEO)</td>
+                    <td>London</td>
+                    <td>47</td>
+                    <td><a href="media/downloads/Software.zip"  download="doc"> <svg class="bi bi-arrow-down-square-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 5a.5.5 0 0 0-1 0v4.793L5.354 7.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 9.793V5z"/>
+                    </svg></a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Gavin Joyce</td>
+                    <td>Developer</td>
+                    <td>Edinburgh</td>
+                    <td>42</td>
+                    <td>$92,575</td>
+                </tr>
+                
+            
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Age</th>
+                    <th>Salary</th>
+                </tr>
+            </tfoot>
+        </table>
+      </div>
+  </section>
+  
+ 
+
+
+  <section class="section bg-primary">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h2 class="text-white mb-0">Other Resources</h2>
+          <p class="text-white lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. .</p>
+        </div>
+        <div class="row">
+        <div class="col-lg-4 text-lg-right" style="margin: 7px;">
+          <a href="bookTabel.html" class="btn btn-outline-white px-4 py-3">Books</a>
+        </div>
+        <div class="col-lg-4 text-lg-right" style="margin: 7px;">
+          <a href="tractTabel.html" class="btn btn-outline-white px-4 py-3">Tracts</a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+   <!--footer-->
+   <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-4 mb-5">
+          <h3>About The Sermon</h3>
+          <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. .</p>
+          <ul class="list-unstyled footer-link d-flex footer-social">
+            <li><a href="#" class="p-2"><span class="fa fa-twitter"></span></a></li>
+            <li><a href="#" class="p-2"><span class="fa fa-facebook"></span></a></li>
+            <li><a href="#" class="p-2"><span class="fa fa-linkedin"></span></a></li>
+            <li><a href="#" class="p-2"><span class="fa fa-instagram"></span></a></li>
+          </ul>
+
+        </div>
+        <div class="col-md-5 mb-5 pl-md-5">
+          <h3>Contact Info</h3>
+          <ul class="list-unstyled footer-link">
+            <li class="d-block">
+              <span class="d-block">Address:</span>
+              <span >34 Street Name, City Name Here, India</span></li>
+            <li class="d-block"><span class="d-block">Telephone:</span><span >+1 242 4942 290</span></li>
+            <li class="d-block"><span class="d-block">Email:</span><span >info@yourdomain.com</span></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-5">
+          <h3>Quick Links</h3>
+          <ul class="list-unstyled footer-link">
+            <li><a href="bookTabel.html">BOOKS</a></li>
+            <li><a href="tractTabel.html">TRACTS</a></li>
+            <li><a href="message.html">MESSAGE</a></li>
+            <li><a href="galary.html">GALLARY</a></li>
+            <li><a href="video.html">VIDEO</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-md-center text-left">
+           <p class="copyright">
+       
+          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </a>
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END footer -->
+
+  <!-- loader -->
+  <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <script src="js/main.js"></script>
+
+
+   <script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+    <script src="js/app.js"></script>
+
+
+    <script>$(document).ready(function() {
+        var t = $('#example').DataTable( {
+            "columnDefs": [ {
+                "searchable": false,
+                "orderable": false,
+                "targets": 0
+            } ],
+            "order": [[ 1, 'asc' ]],
+
+            dom: 'Bfrtip',
+            buttons: [
+                'copyHtml5',
+                'excelHtml5',
+                'csvHtml5',
+                'pdfHtml5'
+            ],
+            responsive: true,
+            
+
+        } );
+     
+        t.on( 'order.dt search.dt', function () {
+            t.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+                cell.innerHTML = i+1;
+            } );
+        } ).draw();
+    } );</script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+  
+    <script src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
+
+    
+</body>
+</html>

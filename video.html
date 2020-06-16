@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sermon</title>
+    <meta charset="utf-8">
+    <link rel='manifest' href='/manifest.json'>
+    <link rel="stylesheet" src="style.css">
+    <link rel="icon" type="image/png" href="icon1.png" />
+    <link rel='manifest' href='/manifest.json'>
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-status-bar" content="#ffffff" >
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--mobile icons-->
+<link rel='shortcut icon' type='image/x-icon' href="images/icon.png" />
+<link rel="apple-touch-icon" sizes="74x74" href="images/icon-74.png" />
+<link rel="apple-touch-icon" sizes="96x96" href="images/icon-96.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="images/icon-144.png" />
+<link rel="apple-touch-icon" sizes="384x384" href="images/icon-384.png" />
+<link rel="apple-touch-icon" sizes="512x512" href="images/icon-512.png" />
+
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oxygen:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Theme Style -->
+    <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+  <script src="http://vjs.zencdn.net/4.12/video.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      .contain {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      
+      .centered:hover{
+          color: rgb(255, 22, 22);
+          background-color: rgb(255, 0, 0);
+      }
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      /* 
+      This is the starting grid for each video with thumbnails 4 across for the largest screen size.
+      It's important to use percentages or there may be gaps on the right side of the page. 
+      */
+    
+      .video {
+        background: rgb(236, 236, 236);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+        width: 23%; /* Thumbnails 4 across */
+        margin: 1%;
+        border-radius: 10px;
+        float: left;
+      }
+    
+       /* 
+       These keep the height of each video thumbnail consistent between YouTube and Vimeo.
+       Each can have thumbnail sizes that vary by 1px and are likely break your layout. 
+       */
+    
+      .video figure {
+        height: 0;
+        padding-bottom: 56.25%;
+        overflow: hidden;}
+    
+        .video figure a {
+          display: block;
+          margin: 0;
+          padding: 0;
+          border: none;
+          line-height: 0;
+        }
+      
+    
+      /* Media Queries - This is the responsive grid. */
+    
+      @media (max-width: 1024px) {
+        .video {
+          width: 31.333%; /* Thumbnails 3 across */
+        }
+      }
+    
+      @media (max-width: 600px) {
+        .video {
+          width: 48%; /* Thumbnails 2 across */
+        }
+      }
+    
+      @media (max-width: 360px) {
+        .video {
+          display: block;
+          width: 96%; /* Single column view. */
+          margin: 2%; /* The smaller the screen, the smaller the percentage actually is. */
+          float: none;
+        }
+      }
+    
+      /* These are my preferred rollover styles. */
+    
+      .video img {
+        width: 100%;
+        opacity: 1;
+      }
+    
+      .video img:hover, .video img:active, .video img:focus {
+        opacity: 0.75;
+      }</style>
+    <style>
+      .pb-video-container {
+          padding-top: 20px;
+          border-radius: 10px;
+          background: transparent;
+          font-family: Lato;
+      }
+  
+      .pb-video {
+          border: 1px solid #e6e6e6;
+          border-radius: 10px;
+          padding: 5px;
+      }
+  
+          .pb-video:hover {
+              background: #2d3d4d;
+          }
+  
+      .pb-video-frame {
+          transition: width 0.5s, height 0.5s;
+      }
+  
+          .pb-video-frame:hover {
+              height: 320px;
+          }
+  
+      .pb-row {
+          margin-bottom: 10px;
+      }
+      img {
+        margin-bottom: -4px;
+        border-radius: 10px;
+      }
+  </style>
+
+  </head>
+  <body>
+    
+   
+    <header role="banner">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand " href="index.html">Sermons</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExample05">
+            <ul class="navbar-nav pl-md-5 ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Books</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Languages</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="bookTabel.html">English</a>
+                  <a class="dropdown-item" href="bookTabel.html">Hindi</a>
+                  <a class="dropdown-item" href="bookTabel.html">Tamil</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tracts</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Languages</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="tractTabel.html">English</a>
+                  <a class="dropdown-item" href="tractTabel.html">Hindi</a>
+                  <a class="dropdown-item" href="tractTabel.html">Tamil</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Message</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Languages</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="message.html">English</a>
+                  <a class="dropdown-item" href="message.html">Hindi</a>
+                  <a class="dropdown-item" href="message.html">Tamil</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galary</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Languages</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="galary.html">English</a>
+                  <a class="dropdown-item" href="galary.html">Hindi</a>
+                  <a class="dropdown-item" href="galary.html">Tamil</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Video</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Languages</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="video.html">English</a>
+                  <a class="dropdown-item" href="video.html">Hindi</a>
+                  <a class="dropdown-item" href="video.html">Tamil</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Music</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Languages</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="music.html">English</a>
+                  <a class="dropdown-item" href="music.html">Hindi</a>
+                  <a class="dropdown-item" href="music.html">Tamil</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Converter</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Languages</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="converter.html">English to Tamil</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Help</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                 <a class="dropdown-item" href="bookOrder.html">Booklet Printing</a>
+                 <a class="dropdown-item" href="tts.html">Text To Speech</a>
+                 <a class="dropdown-item" href="type.html">Type Writer</a>
+                 <a class="dropdown-item" href="imgTxt.html">Image To Text</a>
+
+                </div>
+              </li>
+               
+              <li class="nav-item">
+                <a class="nav-link" href="downloadList.html">Download </a>
+              </li><li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- END header -->
+
+    <div class="top-shadow"></div>
+    
+    <div class="inner-page">
+    <div class="slider-item" style="background-image: url('images/sermon2.jpg');">
+        
+        <div class="container">
+          <div class="row slider-text align-items-center justify-content-center">
+            <div class="col-md-8 text-center col-sm-12 element-animate pt-5">
+              <h1 class="pt-5"><span>Videos</span></h1>
+              <p class="mb-5 w-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta provident, velit fugiat alias, perferendis temporibus.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <br>
+    <br>
+    <section>
+      <div class="container">
+<div class="row">
+  <div class="col">
+    <article class="video">
+      <figure>
+        <div class="contain">
+
+        <a class="fancybox fancybox.iframe" href="https://www.youtube.com/watch?v=gCmdqPu9wiA&t=154s">
+        <img class="videoThumb" src="images/sermon1.jpg"> <div class="centered" style="color: rgb(255, 255, 255); "><svg class="bi bi-caret-right-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+        </svg></div></a>
+       
+        </div>
+      </figure>
+      <h5 class="videoTitle" style="text-align: center;">Sermon</h5>
+    </article>
+
+    <article class="video">
+      <figure>
+        <div class="contain">
+
+        <a class="fancybox fancybox.iframe" href="https://www.youtube.com/watch?v=gCmdqPu9wiA&t=154s">
+        <img class="videoThumb" src="images/sermon2.jpg"> <div class="centered" style="color: rgb(255, 255, 255); "><svg class="bi bi-caret-right-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+        </svg></div></a>
+        
+
+        </div>
+      </figure>
+      <h5 class="videoTitle" style="text-align: center;">Sermon</h5>
+    </article>
+    
+    <article class="video">
+      <figure>
+        <div class="contain">
+
+        <a class="fancybox fancybox.iframe"  href="https://www.youtube.com/watch?v=gCmdqPu9wiA&t=154s">
+        <img class="videoThumb" src="images/sermon1.jpg">  <div class="centered" style="color: rgb(255, 255, 255); "><svg class="bi bi-caret-right-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+        </svg></div>></a>
+       
+
+        </div>
+      </figure>
+      <h5 class="videoTitle" style="text-align: center;">Sermon</h5>
+    </article>
+
+    <article class="video">
+      <figure>
+        <div class="contain">
+
+        <a class="fancybox fancybox.iframe"  href="https://www.youtube.com/watch?v=gCmdqPu9wiA&t=154s">
+        <img class="videoThumb" src="images/sermon1.jpg"> <div class="centered" style="color: rgb(255, 255, 255); "><svg class="bi bi-caret-right-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+        </svg></div></a>
+       
+        </div>
+      </figure>
+      <h5 class="videoTitle" style="text-align: center;">Sermon</h5>
+    </article>
+  </div>
+
+  
+</div>
+<br>
+<div class="row">
+  <div class="col">
+    <article class="video">
+      <figure>
+        <div class="contain">
+
+        <a class="fancybox fancybox.iframe" href="https://www.youtube.com/watch?v=gCmdqPu9wiA&t=154s">
+        <img class="videoThumb" src="images/sermon1.jpg"> <div class="centered" style="color: rgb(255, 255, 255); "><svg class="bi bi-caret-right-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+        </svg></div></a>
+       
+        </div>
+      </figure>
+      <h5 class="videoTitle" style="text-align: center;">Sermon</h5>
+    </article>
+
+    <article class="video">
+      <figure>
+        <div class="contain">
+
+        <a class="fancybox fancybox.iframe" href="https://www.youtube.com/watch?v=gCmdqPu9wiA&t=154s">
+        <img class="videoThumb" src="images/sermon2.jpg"> <div class="centered" style="color: rgb(255, 255, 255); "><svg class="bi bi-caret-right-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+        </svg></div></a>
+        
+
+        </div>
+      </figure>
+      <h5 class="videoTitle" style="text-align: center;">Sermon</h5>
+    </article>
+    
+    <article class="video">
+      <figure>
+        <div class="contain">
+
+        <a class="fancybox fancybox.iframe"  href="https://www.youtube.com/watch?v=gCmdqPu9wiA&t=154s">
+        <img class="videoThumb" src="images/sermon1.jpg">  <div class="centered" style="color: rgb(255, 255, 255); "><svg class="bi bi-caret-right-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+        </svg></div>></a>
+       
+
+        </div>
+      </figure>
+      <h5 class="videoTitle" style="text-align: center;">Sermon</h5>
+    </article>
+
+    <article class="video">
+      <figure>
+        <div class="contain">
+
+        <a class="fancybox fancybox.iframe"  href="https://www.youtube.com/watch?v=gCmdqPu9wiA&t=154s">
+        <img class="videoThumb" src="images/sermon1.jpg"> <div class="centered" style="color: rgb(255, 255, 255); "><svg class="bi bi-caret-right-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+        </svg></div></a>
+       
+        </div>
+      </figure>
+      <h5 class="videoTitle" style="text-align: center;">Sermon</h5>
+    </article>
+  </div>
+
+  
+</div>
+<br>
+<div class="row">
+  <div class="col">
+    <article class="video">
+      <figure>
+        <div class="contain">
+
+        <a class="fancybox fancybox.iframe"  href="https://www.youtube.com/watch?v=gCmdqPu9wiA&t=154s">
+        <img class="videoThumb" src="images/sermon1.jpg"> <div class="centered" style="color: rgb(255, 255, 255); "><svg class="bi bi-caret-right-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+        </svg></div></a>
+       
+        </div>
+      </figure>
+      <h5 class="videoTitle" style="text-align: center;">Sermon</h5>
+    </article>
+
+    <article class="video">
+      <figure>
+        <div class="contain">
+
+        <a class="fancybox fancybox.iframe" href="https://www.youtube.com/watch?v=gCmdqPu9wiA&t=154s">
+        <img class="videoThumb" src="images/sermon2.jpg"> <div class="centered" style="color: rgb(255, 255, 255); "><svg class="bi bi-caret-right-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+        </svg></div></a>
+        
+
+        </div>
+      </figure>
+      <h5 class="videoTitle" style="text-align: center;">Sermon</h5>
+    </article>
+    
+    <article class="video">
+      <figure>
+        <div class="contain">
+
+        <a class="fancybox fancybox.iframe"  href="https://www.youtube.com/watch?v=gCmdqPu9wiA&t=154s">
+        <img class="videoThumb" src="images/sermon1.jpg">  <div class="centered" style="color: rgb(255, 255, 255); "><svg class="bi bi-caret-right-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+        </svg></div>></a>
+       
+
+        </div>
+      </figure>
+      <h5 class="videoTitle" style="text-align: center;">Sermon</h5>
+    </article>
+
+    <article class="video">
+      <figure>
+        <div class="contain">
+
+        <a class="fancybox fancybox.iframe"  href="https://www.youtube.com/watch?v=gCmdqPu9wiA&t=154s">
+        <img class="videoThumb" src="images/sermon1.jpg"> <div class="centered" style="color: rgb(255, 255, 255); "><svg class="bi bi-caret-right-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+        </svg></div></a>
+       
+        </div>
+      </figure>
+      <h5 class="videoTitle" style="text-align: center;">Sermon</h5>
+    </article>
+  </div>
+
+  
+</div>
+<br>
+    </section>
+
+    
+
+    
+
+    <section class="section bg-primary">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <h2 class="text-white mb-0">Videos</h2>
+            <p class="text-white lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. .</p>
+          </div>
+          <div class="row">
+          <div class="col-lg-4 text-lg-right">
+            <a href="#" class="btn btn-outline-white px-4 py-3">Hindi</a>
+          </div>
+          <div class="col-lg-4 text-lg-right">
+            <a href="#" class="btn btn-outline-white px-4 py-3">Tamli</a>
+          </div>
+          <div class="col-lg-4 text-lg-right">
+            <a href="#" class="btn btn-outline-white px-4 py-3">Other</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+   <!--footer-->
+   <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-4 mb-5">
+          <h3>About The Sermon</h3>
+          <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. .</p>
+          <ul class="list-unstyled footer-link d-flex footer-social">
+            <li><a href="#" class="p-2"><span class="fa fa-twitter"></span></a></li>
+            <li><a href="#" class="p-2"><span class="fa fa-facebook"></span></a></li>
+            <li><a href="#" class="p-2"><span class="fa fa-linkedin"></span></a></li>
+            <li><a href="#" class="p-2"><span class="fa fa-instagram"></span></a></li>
+          </ul>
+
+        </div>
+        <div class="col-md-5 mb-5 pl-md-5">
+          <h3>Contact Info</h3>
+          <ul class="list-unstyled footer-link">
+            <li class="d-block">
+              <span class="d-block">Address:</span>
+              <span >34 Street Name, City Name Here, India</span></li>
+            <li class="d-block"><span class="d-block">Telephone:</span><span >+1 242 4942 290</span></li>
+            <li class="d-block"><span class="d-block">Email:</span><span >info@yourdomain.com</span></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-5">
+          <h3>Quick Links</h3>
+          <ul class="list-unstyled footer-link">
+            <li><a href="bookTabel.html">BOOKS</a></li>
+            <li><a href="tractTabel.html">TRACTS</a></li>
+            <li><a href="message.html">MESSAGE</a></li>
+            <li><a href="galary.html">GALLARY</a></li>
+            <li><a href="video.html">VIDEO</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-md-center text-left">
+           <p class="copyright">
+       
+          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </a>
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END footer -->
+
+  <!-- loader -->
+  <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <script src="js/main.js"></script>
+      
+  <script>
+    $(document).ready(function() {
+      $('.fancybox').fancybox({
+        padding   : 0,
+        maxWidth  : '100%',
+        maxHeight : '100%',
+        width   : 960,
+        height    :715,
+        autoSize  : true,
+        closeClick  : true,
+        openEffect  : 'elastic',
+        closeEffect : 'elastic'
+      });
+    });
+  </script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
